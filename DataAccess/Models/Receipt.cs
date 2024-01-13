@@ -14,6 +14,7 @@ public record Receipt
     public required Guid WorkerId { get; init; }
     [ForeignKey("Service")]
     public required Guid ServiceId { get; init; }
+    public required DateOnly Date {get; init;}
 
     public Auto? Auto { get; init; }
     public Worker? Worker { get; init; }
